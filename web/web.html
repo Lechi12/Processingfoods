@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<header>
+    <h1>Lebechi Obayi</h1>
+    <p>Front-End Developer | JavaScript Enthusiast</p>
+</header>
+
+<div class="container">
+    <h2>Add New Project</h2>
+    <form id="projectForm">
+        <input type="text" id="projectTitle" placeholder="Project Title" required>
+        <textarea id="projectDescription" placeholder="Project Description" rows="4" required></textarea>
+        <input type="text" id="projectLink" placeholder="Link to Project (e.g., GitHub)" required>
+        <button type="submit">Add Project</button>
+    </form>
+    
+    <div class="projects" id="projectsContainer">
+        <!-- Project List will appear here -->
+    </div>
+</div>
+
+<script>
+    document.getElementById('projectForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get the form data
+        const title = document.getElementById('projectTitle').value;
+        const description = document.getElementById('projectDescription').value;
+        const link = document.getElementById('projectLink').value;
+
+        // Create new project element
+        const projectElement = document.createElement('div');
+        projectElement.classList.add('project');
+
+        // Add content to the project element
+        projectElement.innerHTML = `
+            <h3>${title}</h3>
+            <p>${description}</p>
+            <a href="${link}" target="_blank">View Project</a>
+        `;
+
+        // Add the new project to the project list
+        document.getElementById('projectsContainer').appendChild(projectElement);
+
+        // Clear form fields
+        document.getElementById('projectTitle').value = '';
+        document.getElementById('projectDescription').value = '';
+        document.getElementById('projectLink').value = '';
+    });
+</script>
+
+</body>
+</html>

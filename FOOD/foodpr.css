@@ -1,0 +1,351 @@
+/* General Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #87CEEB;
+}
+
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #2e7d32;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+/* Side Navigation Bar */
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4caf50;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNavigationBar a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNavigationBar a:hover {
+    color: white;
+}
+
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Hero Section */
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.line .side1 {
+    padding-right: 50px;
+}
+
+.side1 h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.side1 button:hover {
+    background-color: #1b5e20;
+}
+
+.line .side2 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section .topic a {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.about .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about .boxes .box {
+    margin: 10px;
+    max-width: calc(33% - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about .boxes .box:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background: #f1f8e9;
+}
+
+.contact .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.contactMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input1 {
+    flex: 1;
+    max-width: 45%;
+}
+
+.input1 input, .input1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button button {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #2e7d32;
+}
+
+.rightside1 {
+    flex: 1;
+    max-width: 45%;
+}
+
+.rightside1 .title1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.rightside1 .content1 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #87CEEB;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer span {
+    font-size: 17px;
+    color: white;
+}
+
+footer span a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    .line {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .side1 {
+        padding-right: 0;
+    }
+
+    .about .boxes .box {
+        max-width: calc(50% - 20px);
+    }
+
+    .contactMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input1, .rightside1 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about .boxes .box {
+        max-width: 100%;
+    }
+
+    .line .side2 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Stages of Food Production Section */
+.about {
+    padding: 50px 5%;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.about .title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6b8e23;
+}
+
+.about .boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .boxes .box {
+    width: calc(33% - 40px);
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about .boxes .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about .boxes .topic {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b8e23;
+    margin-bottom: 10px;
+}
+
+.about .boxes .topic a {
+    text-decoration: none;
+    color: #6b8e23;
+}
+
+.about .boxes .topic a:hover {
+    text-decoration: underline;
+}
+
+.about .boxes p {
+    font-size: 16px;
+    color: #333;
+}

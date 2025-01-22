@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%; /* Prevents content from exceeding the screen width */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+  }
+  
+  
+  /* Add your previous CSS here */
+  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+  /* Base */
+  :root {
+    --clr-primary: #fe5722;
+    --clr-secondary: #272d36;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #fff;
+    color: var(--clr-secondary);
+    overflow-x: hidden;
+  }
+  
+  .section {
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  /* Add this to allow elements to wrap when the screen size is small */
+  }
+  
+  
+  .container {
+    padding: 0 30px;
+  }
+  
+  .primary {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .secondary {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .tertiary {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 14px 20px;
+    background: var(--clr-primary);
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px 0;
+  }
+  
+  /* Navigation */
+  nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff5f2;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.22);
+    z-index: 22;
+  }
+  
+  label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: 700;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+  }
+  
+  .menu a.active,
+  .menu a:hover {
+    border-bottom: 2px solid var(--clr-primary);
+    transition: 0.3s;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* Hero Section */
+  #hero-section {
+    background: #87CEFA;
+    margin-top: 60px;
+  }
+  
+  .text,
+  .visual {
+    width: 50%;
+  }
+  
+  .text {
+    margin: 0 20px;
+  }
+  
+  .visual img {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+  
+  /* How It Works Section */
+  #how-it-works {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .box {
+    border: 1px solid #b2b2b2;
+    padding: 25px 5px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .box ion-icon {
+    font-size: 35px;
+    color: var(--clr-primary);
+    margin: 15px 0;
+  }
+  
+  .box.active,
+  .box:hover {
+    color: #fff;
+    border-color: var(--clr-primary);
+    background: var(--clr-primary);
+  }
+  
+  .box.active ion-icon,
+  .box:hover ion-icon {
+    color: #fff;
+  }
+  
+  /* Testimonials */
+  #testimonial .visual img {
+    margin-left: auto;
+  }
+  
+  .user {
+    margin-top: 30px;
+    justify-content: start;
+  }
+  
+  .user img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  /* FAQ */
+  #faq .secondary {
+    text-align: center;
+  }
+  
+  .faq {
+    width: 60%;
+    margin: 50px auto 20px auto;
+  }
+  
+  summary {
+    padding: 1em;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 1em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    font-weight: 600;
+  }
+  
+  details[open] summary ~ * {
+    animation: open 1s ease-in-out;
+  }
+  
+  @keyframes open {
+    from {
+      opacity: 1;
+      margin-top: -10px;
+    }
+  
+    top {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+  .rounded-img {
+    border-radius: 20px; /* Adjust the value to control the roundness */
+  }
+  /* Base Menu Styles */
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+  }
+  
+  /* Mobile Menu Styles */
+  #check {
+    display: none; /* Hides the checkbox */
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+  }
+  
+  @media (max-width: 768px) {
+    /* Ensure the menu links are visible and displayed properly on smaller screens */
+    nav ul {
+      display: flex;  /* Use flexbox to display the links horizontally */
+      flex-direction: row;  /* Keep the menu links in a row */
+      width: 100%;
+      justify-content: center;  /* Center the links */
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Adjust each menu item */
+    nav ul li {
+      margin: 0 10px;  /* Add spacing between menu items */
+    }
+  
+    nav ul li a {
+      font-size: 18px;  /* Adjust font size for better readability */
+      padding: 10px 15px;
+    }
+  
+    /* Adjust the logo size for smaller screens */
+    label.logo {
+      font-size: 30px;  /* Adjust logo size */
+      line-height: 80px;  /* Ensure logo stays aligned with the menu */
+    }
+  
+    /* Ensure the menu button is visible and positioned correctly */
+    .checkbtn {
+      display: none;  /* Hide the menu toggle button */
+    }
+  }
+  
+  
+    /* Show the menu when the checkbox is checked */
+    #check:checked + .checkbtn + ul {
+      display: block;
+    }
+  
+    nav ul li {
+      display: block; /* Stack the items vertically */
+      margin: 15px 0;
+    }
+  
+    /* Show the hamburger icon on mobile */
+    .checkbtn {
+      display: block;
+    }
+    .flex {
+      flex-wrap: wrap; /* Allows items to wrap to the next line */
+      justify-content: center; /* Centers the content */
+  }
+  
+  img, .container, .section {
+    max-width: 100%; /* Ensures content doesn't overflow */
+    width: 100%; /* Use full width of the parent container */
+  }
+  @media (max-width: 768px) {
+    .primary {
+        font-size: 32px; /* Smaller headings */
+    }
+    .secondary {
+        font-size: 24px;
+    }
+    .tertiary {
+        font-size: 18px;
+    }
+  }
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center the links */
+        text-align: center;
+    }
+  
+    nav ul li {
+        margin: 10px 0; /* Add spacing between links */
+    }
+  
+    .checkbtn {
+        display: block; /* Show the hamburger menu */
+    }
+  
+    nav ul {
+        display: none; /* Hide the menu initially */
+    }
+  
+    #check:checked ~ ul {
+        display: flex; /* Show the menu when toggled */
+        flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    .text, .visual {
+        width: 100%; /* Make text and image full width */
+        text-align: center;
+    }
+  
+    .visual img {
+        max-width: 90%; /* Resize images */
+        height: auto; /* Maintain aspect ratio */
+    }
+  }
+  @media (max-width: 768px) {
+    .section {
+        padding: 20px 10px; /* Reduce padding */
+    }
+    .btn {
+        font-size: 18px; /* Adjust button size */
+        padding: 10px 15px;
+    }
+  }
+  
