@@ -233,3 +233,304 @@ details[open] summary ~ * {
     margin-top: 0;
   }
 }
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header and Navigation */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Sections Styling */
+  .section {
+    padding: 50px 20px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .visual {
+    flex: 1;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  h2.primary {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #d4ac0d;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer h2 {
+    font-size: 24px;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #f1c40f;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Contact Page */
+  #contact .form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #f1c40f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #d4ac0d;
+  }
+  
+  /* About Page */
+  #about {
+    background-color: #e2e2e2;
+  }
+  
+  #about .text {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Processing Stages Page */
+  #stages .box {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #stages .box h3 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #stages .box p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #stages .box.active {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  ion-icon {
+    font-size: 40px;
+    color: #f1c40f;
+  }
+  /* Styling for the Processing Stage images */
+.stage-image {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add space above and below images */
+    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+  }
+  
+  /* Optional: You can adjust the box container size as well */
+  .box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+  }
+  /* Styling for About Section */
+#about {
+    background-color: #f7f7f7; /* Light background color to contrast the white */
+    padding: 50px 0; /* Adds vertical padding for spacing */
+    font-family: 'Arial', sans-serif; /* Make sure the font is clean */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .visual {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .text {
+    flex: 1.5;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 400px; /* Limits the image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .secondary {
+    color: #4a90e2; /* Soft blue color for subheading */
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  .primary {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #333; /* Dark gray for better readability */
+  }
+  
+  .tertiary {
+    font-size: 1.2em;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 25px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #357ab7;
+  }
+  
