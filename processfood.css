@@ -938,4 +938,13 @@ details[open] summary ~ * {
     font-size: 18px;
   }
 }
-  
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
