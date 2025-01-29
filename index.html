@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food processing company offering safe, eco-friendly, and high-quality products from farm to table.">
+    <title>Food Processing</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="processfood.css" />
+  </head>
+  <body>
+    <!-- Main Heading for SEO -->
+    <h1 class="primary">Food Processing: From Farm to Table</h1> <!-- Added main heading for SEO -->
+
+    <!-- Menu with links to About Us, Services, and Contact -->
+    <div class="menu">
+      <nav aria-label="Main navigation">
+        <label class="logo">Food Processing</label>
+        <input type="checkbox" id="check">
+        <label class="checkbtn" for="check">&#9776;</label>
+        <ul>
+          <li><a href="#" id="homeLink">Home</a></li> <!-- Changed href to "#" -->
+          <li><a href="about.html">About Us</a></li> <!-- Link to About Us page -->
+          <li><a href="services.html">Services</a></li> <!-- Link to Services page -->
+          <li><a href="contact.html">Contact</a></li> <!-- Link to Contact page -->
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section flex" id="hero-section">
+      <div class="text">
+        <h1 class="primary">
+          Revolutionizing Food Processing, <br />
+          From Farm to Table
+        </h1>
+        <p class="tertiary">
+          Explore the various stages of food processing, from the handling of raw materials to the packaging of finished products, ensuring quality and safety at every step.
+        </p>
+        <a href="processing-stages.html" class="btn">Learn More</a>
+      </div>
+      <div class="visual">
+        <img src="https://respect.international/wp-content/uploads/2017/10/15198135475_9afd7a536f_k-1920x1280.jpg" alt="Workers engaged in food processing, showcasing various stages of production, including sorting and packaging of food items." />
+      </div>
+    </div>
+
+    <!-- Other sections remain the same -->
+
+    <!-- Footer with quick links to About Us, Services, and Contact -->
+    <div class="footer">
+      <div class="container flex">
+        <div class="footer-about">
+          <h2>About Us</h2>
+          <p>
+            We specialize in food processing, ensuring the highest standards of safety, quality, and efficiency in every product we produce.
+          </p>
+        </div>
+        <div class="footer-category">
+          <h2>Our Processing Stages</h2>
+          <ul>
+            <li>Raw Material Handling</li>
+            <li>Cleaning and Sorting</li>
+            <li>Cooking and Preservation</li>
+            <li>Packaging</li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="about.html">About Us</a></li> <!-- Link to About Us page -->
+            <li><a href="services.html">Services</a></li> <!-- Link to Services page -->
+            <li><a href="contact.html">Contact Us</a></li> <!-- Link to Contact page -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2025. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <script>
+        document.getElementById('homeLink').addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
+      
+  </body>
+</html>
